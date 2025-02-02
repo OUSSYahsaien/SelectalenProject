@@ -33,7 +33,7 @@ Route::prefix('candidat')->name('candidat.')->group(function () {
         Route::post('register', [CandidatAuthController::class, 'register']);
         Route::get('offers', [CandidatController::class, 'showOffersForm'])->name('offers');        
         Route::get('search-offers-g', [OffersController::class, 'showSearchOffersForm'])->name('search.offers.guest');
-        Route::get('show-offer-g', [OffersController::class, 'showOffer'])->name('search.offers.guest');
+        Route::get('show-offer-g', [OffersController::class, 'showOffer'])->name('search.offer.guest');
         Route::post('/filter-offers-g', [OffersController::class, 'filterOffers'])->name('filter.offers.g');
     });
     
